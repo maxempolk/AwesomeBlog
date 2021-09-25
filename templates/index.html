@@ -1,0 +1,15 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% for post in posts %}
+        <!-- <div class = "blockLine"> -->
+            <div class = "article">
+                <h1 class = "postName">{{post.name}}</h1>
+                <h4 class = "postBody">{{post.body}}</h4>
+                <p class="postWriter">{{post.writer}}</p>
+            </div>
+        <!-- </div> -->
+    {% endfor %}
+</body> 
+
